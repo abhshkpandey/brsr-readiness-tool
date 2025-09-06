@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "app/api/report/route.js": {
+      "maxDuration": 30
+    },
+    "app/api/assess/route.js": {
+      "maxDuration": 10
+    }
+  }
+}

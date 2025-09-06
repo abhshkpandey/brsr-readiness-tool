@@ -1,0 +1,581 @@
+{
+  "sections": {
+    "workforce": {
+      "title": "Workforce & Employment",
+      "questions": [
+        {
+          "id": "workforce_1a",
+          "question": "Total number of male employees",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "workforce_1b",
+          "question": "Total number of female employees",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "workforce_1c",
+          "question": "Total number of other gender employees",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "workforce_2a",
+          "question": "Total number of male workers",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "workforce_2b",
+          "question": "Total number of female workers",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "workforce_2c",
+          "question": "Total number of other gender workers",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "workforce_3",
+          "question": "Total working hours in a shift for employees",
+          "type": "number",
+          "required": true,
+          "unit": "hours"
+        },
+        {
+          "id": "workforce_4",
+          "question": "Total working hours in a shift for workers",
+          "type": "number",
+          "required": true,
+          "unit": "hours"
+        },
+        {
+          "id": "workforce_5",
+          "question": "Total number of working days in a year",
+          "type": "number",
+          "required": true,
+          "unit": "days"
+        }
+      ]
+    },
+    "safety": {
+      "title": "Occupational Health & Safety",
+      "questions": [
+        {
+          "id": "safety_1",
+          "question": "Number of Lost Time Injuries (LTI) during the reporting period",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "safety_2",
+          "question": "Lost Time Injury Frequency Rate (LTIFR)",
+          "type": "number",
+          "required": true,
+          "unit": "rate"
+        },
+        {
+          "id": "safety_3",
+          "question": "Number of fatalities in the workplace",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "safety_4",
+          "question": "Total recordable incident rate (TRIR)",
+          "type": "number",
+          "required": true,
+          "unit": "rate"
+        },
+        {
+          "id": "safety_5",
+          "question": "Details of safety training programs conducted for employees/workers",
+          "type": "text",
+          "required": true,
+          "unit": "description"
+        },
+        {
+          "id": "safety_6",
+          "question": "Number of employees covered under occupational health check-ups",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "safety_7",
+          "question": "Availability of health insurance or medical facilities for employees/workers",
+          "type": "text",
+          "required": true,
+          "unit": "description"
+        },
+        {
+          "id": "safety_8",
+          "question": "Total man-hours worked",
+          "type": "number",
+          "required": true,
+          "unit": "hours"
+        },
+        {
+          "id": "safety_9",
+          "question": "Safety training hours provided",
+          "type": "number",
+          "required": true,
+          "unit": "hours"
+        }
+      ]
+    },
+    "health": {
+      "title": "Employee Health & Well-being",
+      "questions": [
+        {
+          "id": "health_1",
+          "question": "Total number of employees",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "health_2",
+          "question": "Number of employees covered under health insurance",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "health_3",
+          "question": "Average training hours per employee",
+          "type": "number",
+          "required": true,
+          "unit": "hours"
+        },
+        {
+          "id": "health_4",
+          "question": "Employee satisfaction score (1-10)",
+          "type": "number",
+          "required": true,
+          "unit": "score",
+          "min": 1,
+          "max": 10
+        }
+      ]
+    },
+    "environmental": {
+      "title": "Environmental Performance",
+      "questions": [
+        {
+          "id": "env_1",
+          "question": "Total energy consumption (in GJ)",
+          "type": "number",
+          "required": true,
+          "unit": "GJ"
+        },
+        {
+          "id": "env_2",
+          "question": "Renewable energy consumption (in GJ)",
+          "type": "number",
+          "required": true,
+          "unit": "GJ"
+        },
+        {
+          "id": "env_3",
+          "question": "% share of renewable energy in total energy consumption",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "env_4",
+          "question": "Total water consumption (in kiloliters)",
+          "type": "number",
+          "required": true,
+          "unit": "KL"
+        },
+        {
+          "id": "env_5",
+          "question": "Water recycled & reused (in kiloliters)",
+          "type": "number",
+          "required": true,
+          "unit": "KL"
+        },
+        {
+          "id": "env_6",
+          "question": "% of recycled/reused water vs total consumption",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "env_7a",
+          "question": "Total GHG emissions - Scope 1 (in tCO2e)",
+          "type": "number",
+          "required": true,
+          "unit": "tCO2e"
+        },
+        {
+          "id": "env_7b",
+          "question": "Total GHG emissions - Scope 2 (in tCO2e)",
+          "type": "number",
+          "required": true,
+          "unit": "tCO2e"
+        },
+        {
+          "id": "env_7c",
+          "question": "Total GHG emissions - Scope 3 (in tCO2e)",
+          "type": "number",
+          "required": false,
+          "unit": "tCO2e"
+        },
+        {
+          "id": "env_8",
+          "question": "Emission intensity (per unit of revenue or production)",
+          "type": "number",
+          "required": true,
+          "unit": "tCO2e/unit"
+        },
+        {
+          "id": "env_9",
+          "question": "Total waste generated (in metric tonnes)",
+          "type": "number",
+          "required": true,
+          "unit": "MT"
+        },
+        {
+          "id": "env_10",
+          "question": "Hazardous waste generated (in metric tonnes)",
+          "type": "number",
+          "required": true,
+          "unit": "MT"
+        },
+        {
+          "id": "env_11",
+          "question": "% of hazardous waste recycled vs disposed",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "env_12",
+          "question": "Non-hazardous waste generated (in metric tonnes)",
+          "type": "number",
+          "required": true,
+          "unit": "MT"
+        },
+        {
+          "id": "env_13",
+          "question": "% of non-hazardous waste recycled vs disposed",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "env_14",
+          "question": "Total waste recycled/reused (in metric tonnes)",
+          "type": "number",
+          "required": true,
+          "unit": "MT"
+        }
+      ]
+    },
+    "business_conduct": {
+      "title": "Business Conduct & Governance",
+      "questions": [
+        {
+          "id": "conduct_1",
+          "question": "Has the company adopted a code of conduct/ethics for employees & directors?",
+          "type": "boolean",
+          "required": true,
+          "unit": "yes/no"
+        },
+        {
+          "id": "conduct_2",
+          "question": "% of employees trained in anti-corruption/anti-bribery policies",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "conduct_3a",
+          "question": "Number of complaints of sexual harassment filed",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "conduct_3b",
+          "question": "Number of complaints of sexual harassment resolved",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "conduct_3c",
+          "question": "Number of complaints of sexual harassment pending",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "conduct_4a",
+          "question": "Number of whistleblower complaints received",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "conduct_4b",
+          "question": "Number of whistleblower complaints resolved",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "conduct_4c",
+          "question": "Number of whistleblower complaints pending",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "conduct_5",
+          "question": "Does the company have a grievance redressal mechanism for workers and stakeholders?",
+          "type": "boolean",
+          "required": true,
+          "unit": "yes/no"
+        }
+      ]
+    },
+    "business": {
+      "title": "Business Ethics & Performance",
+      "questions": [
+        {
+          "id": "business_1",
+          "question": "Revenue from products/services with positive social/environmental impact",
+          "type": "number",
+          "required": true,
+          "unit": "INR Cr"
+        },
+        {
+          "id": "business_2",
+          "question": "Total revenue",
+          "type": "number",
+          "required": true,
+          "unit": "INR Cr"
+        },
+        {
+          "id": "business_3",
+          "question": "CEO/MD compensation",
+          "type": "number",
+          "required": true,
+          "unit": "INR Lakhs"
+        },
+        {
+          "id": "business_4",
+          "question": "Median employee compensation",
+          "type": "number",
+          "required": true,
+          "unit": "INR Lakhs"
+        },
+        {
+          "id": "business_5",
+          "question": "Number of suppliers assessed for ESG criteria",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "business_6",
+          "question": "Total number of suppliers",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        }
+      ]
+    },
+    "business_openness": {
+      "title": "Business Openness & Related Party Transactions",
+      "questions": [
+        {
+          "id": "openness_1",
+          "question": "Purchases from trading houses as % of total purchases",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "openness_2",
+          "question": "Number of trading houses from which purchases are made",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "openness_3",
+          "question": "Purchases from top 10 trading houses as % of total purchases from trading houses",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "openness_4",
+          "question": "Sales to dealers/distributors as % of total sales",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "openness_5",
+          "question": "Number of dealers/distributors to whom sales are made",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "openness_6",
+          "question": "Sales to top 10 dealers/distributors as % of total sales to dealers/distributors",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        }
+      ]
+    },
+    "related_party": {
+      "title": "Related Party Transactions (RPTs)",
+      "questions": [
+        {
+          "id": "rpt_1",
+          "question": "Total value of related party transactions",
+          "type": "number",
+          "required": true,
+          "unit": "INR Cr"
+        },
+        {
+          "id": "rpt_2",
+          "question": "Number of related party transactions requiring board approval",
+          "type": "number",
+          "required": true,
+          "unit": "count"
+        },
+        {
+          "id": "rpt_3",
+          "question": "Percentage of independent directors on board",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "rpt_4",
+          "question": "Related Party Transactions in Purchases as % of total purchases",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "rpt_5",
+          "question": "Related Party Transactions in Sales as % of total sales",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "rpt_6",
+          "question": "Related Party Transactions in Loans & advances as % of total loans & advances",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "rpt_7",
+          "question": "Related Party Transactions in Investments as % of total investments",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "rpt_8a",
+          "question": "Loans & advances with related parties (absolute value)",
+          "type": "number",
+          "required": true,
+          "unit": "INR Cr"
+        },
+        {
+          "id": "rpt_8b",
+          "question": "Loans & advances with related parties (%)",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "rpt_9a",
+          "question": "Investments with related parties (absolute value)",
+          "type": "number",
+          "required": true,
+          "unit": "INR Cr"
+        },
+        {
+          "id": "rpt_9b",
+          "question": "Investments with related parties (%)",
+          "type": "number",
+          "required": true,
+          "unit": "%",
+          "min": 0,
+          "max": 100
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2025-08-27",
+    "description": "Comprehensive ESG (Environmental, Social, and Governance) reporting framework covering workforce, safety, health, environmental performance, business conduct, ethics, and related party transactions",
+    "compliance_frameworks": [
+      "BRSR (Business Responsibility and Sustainability Report)",
+      "GRI Standards",
+      "SEBI ESG Requirements",
+      "Companies Act 2013 (India)"
+    ],
+    "total_questions": 77,
+    "sections_count": 8
+  }
+}

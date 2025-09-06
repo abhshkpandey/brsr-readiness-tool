@@ -1,0 +1,352 @@
+{
+  "formulas": {
+    "workforce_hr": {
+      "title": "Workforce & HR Formulas",
+      "calculations": [
+        {
+          "id": "formula_1",
+          "name": "Lost Time Injury Frequency Rate (LTIFR)",
+          "formula": "(number_of_ltis * 1000000) / total_hours_worked",
+          "inputs": ["number_of_ltis", "total_hours_worked"],
+          "output_unit": "per million hours"
+        },
+        {
+          "id": "formula_2",
+          "name": "Employee to Worker Ratio",
+          "formula": "total_employees / total_workers",
+          "inputs": ["total_employees", "total_workers"],
+          "output_unit": "ratio"
+        },
+        {
+          "id": "formula_3",
+          "name": "Productivity Rate",
+          "formula": "(actual_working_hours / planned_working_hours) * 100",
+          "inputs": ["actual_working_hours", "planned_working_hours"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_4",
+          "name": "Total Hours Worked Calculation",
+          "formula": "(total_employees + total_workers) * hours_per_shift * working_days_per_year",
+          "inputs": ["total_employees", "total_workers", "hours_per_shift", "working_days_per_year"],
+          "output_unit": "hours"
+        },
+        {
+          "id": "formula_5",
+          "name": "Total Recordable Incident Rate (TRIR)",
+          "formula": "(total_recordable_incidents * 200000) / total_hours_worked",
+          "inputs": ["total_recordable_incidents", "total_hours_worked"],
+          "output_unit": "per 200,000 hours"
+        }
+      ]
+    },
+    "pay_equity_diversity": {
+      "title": "Pay Equity & Diversity Formulas",
+      "calculations": [
+        {
+          "id": "formula_6",
+          "name": "Gender Pay Gap Percentage",
+          "formula": "((median_pay_men - median_pay_women) / median_pay_men) * 100",
+          "inputs": ["median_pay_men", "median_pay_women"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_7",
+          "name": "Gender Diversity Percentage",
+          "formula": "(category_headcount / total_headcount) * 100",
+          "inputs": ["category_headcount", "total_headcount"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_8",
+          "name": "CEO to Median Employee Pay Ratio",
+          "formula": "ceo_compensation / median_employee_compensation",
+          "inputs": ["ceo_compensation", "median_employee_compensation"],
+          "output_unit": "ratio"
+        },
+        {
+          "id": "formula_9",
+          "name": "Female Employee Percentage",
+          "formula": "(female_employees / total_employees) * 100",
+          "inputs": ["female_employees", "total_employees"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_10",
+          "name": "Male Employee Percentage",
+          "formula": "(male_employees / total_employees) * 100",
+          "inputs": ["male_employees", "total_employees"],
+          "output_unit": "%"
+        }
+      ]
+    },
+    "environmental": {
+      "title": "Environmental Formulas",
+      "calculations": [
+        {
+          "id": "formula_11",
+          "name": "Renewable Energy Percentage",
+          "formula": "(renewable_energy_consumption / total_energy_consumption) * 100",
+          "inputs": ["renewable_energy_consumption", "total_energy_consumption"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_12",
+          "name": "Water Intensity per Employee",
+          "formula": "total_water_consumption / total_employees",
+          "inputs": ["total_water_consumption", "total_employees"],
+          "output_unit": "KL/employee"
+        },
+        {
+          "id": "formula_13",
+          "name": "Water Recycling Rate",
+          "formula": "(water_recycled_reused / total_water_consumption) * 100",
+          "inputs": ["water_recycled_reused", "total_water_consumption"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_14",
+          "name": "Waste Recycling Rate",
+          "formula": "(total_waste_recycled / total_waste_generated) * 100",
+          "inputs": ["total_waste_recycled", "total_waste_generated"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_15",
+          "name": "Hazardous Waste Recycling Rate",
+          "formula": "(hazardous_waste_recycled / hazardous_waste_generated) * 100",
+          "inputs": ["hazardous_waste_recycled", "hazardous_waste_generated"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_16",
+          "name": "Non-Hazardous Waste Recycling Rate",
+          "formula": "(non_hazardous_waste_recycled / non_hazardous_waste_generated) * 100",
+          "inputs": ["non_hazardous_waste_recycled", "non_hazardous_waste_generated"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_17",
+          "name": "Total GHG Emissions",
+          "formula": "scope_1_emissions + scope_2_emissions + scope_3_emissions",
+          "inputs": ["scope_1_emissions", "scope_2_emissions", "scope_3_emissions"],
+          "output_unit": "tCO2e"
+        },
+        {
+          "id": "formula_18",
+          "name": "Emission Intensity per Revenue",
+          "formula": "total_ghg_emissions / total_revenue",
+          "inputs": ["total_ghg_emissions", "total_revenue"],
+          "output_unit": "tCO2e/INR Cr"
+        },
+        {
+          "id": "formula_19",
+          "name": "Emission Intensity per Employee",
+          "formula": "total_ghg_emissions / total_employees",
+          "inputs": ["total_ghg_emissions", "total_employees"],
+          "output_unit": "tCO2e/employee"
+        },
+        {
+          "id": "formula_20",
+          "name": "Energy Intensity per Employee",
+          "formula": "total_energy_consumption / total_employees",
+          "inputs": ["total_energy_consumption", "total_employees"],
+          "output_unit": "GJ/employee"
+        }
+      ]
+    },
+    "governance_compliance": {
+      "title": "Governance & Compliance Formulas",
+      "calculations": [
+        {
+          "id": "formula_21",
+          "name": "Independent Directors Percentage",
+          "formula": "(independent_directors / total_board_members) * 100",
+          "inputs": ["independent_directors", "total_board_members"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_22",
+          "name": "Women Directors Percentage",
+          "formula": "(women_directors / total_board_members) * 100",
+          "inputs": ["women_directors", "total_board_members"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_23",
+          "name": "Training Hours per Employee",
+          "formula": "total_training_hours / total_employees",
+          "inputs": ["total_training_hours", "total_employees"],
+          "output_unit": "hours/employee"
+        },
+        {
+          "id": "formula_24",
+          "name": "Ethics Training Coverage Percentage",
+          "formula": "(employees_trained_ethics / total_employees) * 100",
+          "inputs": ["employees_trained_ethics", "total_employees"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_25",
+          "name": "Safety Training Coverage Percentage",
+          "formula": "(employees_covered_safety_training / total_employees) * 100",
+          "inputs": ["employees_covered_safety_training", "total_employees"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_26",
+          "name": "Health Insurance Coverage Percentage",
+          "formula": "(employees_covered_health_insurance / total_employees) * 100",
+          "inputs": ["employees_covered_health_insurance", "total_employees"],
+          "output_unit": "%"
+        }
+      ]
+    },
+    "business_openness": {
+      "title": "Business Openness & RPT Formulas",
+      "calculations": [
+        {
+          "id": "formula_27",
+          "name": "Supplier ESG Assessment Rate",
+          "formula": "(suppliers_assessed_esg / total_suppliers) * 100",
+          "inputs": ["suppliers_assessed_esg", "total_suppliers"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_28",
+          "name": "RPT as Percentage of Total Revenue",
+          "formula": "(total_rpt_value / total_revenue) * 100",
+          "inputs": ["total_rpt_value", "total_revenue"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_29",
+          "name": "Purchases from Trading Houses Percentage",
+          "formula": "(purchases_from_trading_houses / total_purchases) * 100",
+          "inputs": ["purchases_from_trading_houses", "total_purchases"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_30",
+          "name": "Sales to Dealers/Distributors Percentage",
+          "formula": "(sales_to_dealers_distributors / total_sales) * 100",
+          "inputs": ["sales_to_dealers_distributors", "total_sales"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_31",
+          "name": "RPT in Purchases Percentage",
+          "formula": "(rpt_purchases / total_purchases) * 100",
+          "inputs": ["rpt_purchases", "total_purchases"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_32",
+          "name": "RPT in Sales Percentage",
+          "formula": "(rpt_sales / total_sales) * 100",
+          "inputs": ["rpt_sales", "total_sales"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_33",
+          "name": "RPT in Loans & Advances Percentage",
+          "formula": "(rpt_loans_advances / total_loans_advances) * 100",
+          "inputs": ["rpt_loans_advances", "total_loans_advances"],
+          "output_unit": "%"
+        },
+        {
+          "id": "formula_34",
+          "name": "RPT in Investments Percentage",
+          "formula": "(rpt_investments / total_investments) * 100",
+          "inputs": ["rpt_investments", "total_investments"],
+          "output_unit": "%"
+        }
+      ]
+    },
+    "composite_scores": {
+      "title": "Composite Score Formulas",
+      "calculations": [
+        {
+          "id": "formula_35",
+          "name": "BRSR Readiness Score",
+          "formula": "(workforce_score * 0.25) + (diversity_score * 0.20) + (environmental_score * 0.30) + (governance_score * 0.25)",
+          "inputs": ["workforce_score", "diversity_score", "environmental_score", "governance_score"],
+          "output_unit": "score (0-100)"
+        },
+        {
+          "id": "formula_36",
+          "name": "Environmental Performance Index",
+          "formula": "((renewable_energy_pct * 0.3) + (water_recycling_rate * 0.25) + (waste_recycling_rate * 0.25) + ((100 - emission_intensity_normalized) * 0.2))",
+          "inputs": [
+            "renewable_energy_pct",
+            "water_recycling_rate",
+            "waste_recycling_rate",
+            "emission_intensity_normalized"
+          ],
+          "output_unit": "score (0-100)"
+        },
+        {
+          "id": "formula_37",
+          "name": "Social Performance Index",
+          "formula": "((100 - gender_pay_gap) * 0.3) + (female_employee_pct * 0.2) + (safety_score * 0.3) + (training_coverage * 0.2)",
+          "inputs": ["gender_pay_gap", "female_employee_pct", "safety_score", "training_coverage"],
+          "output_unit": "score (0-100)"
+        },
+        {
+          "id": "formula_38",
+          "name": "Governance Performance Index",
+          "formula": "(independent_directors_pct * 0.4) + (women_directors_pct * 0.3) + (ethics_training_coverage * 0.3)",
+          "inputs": ["independent_directors_pct", "women_directors_pct", "ethics_training_coverage"],
+          "output_unit": "score (0-100)"
+        }
+      ]
+    },
+    "derived_calculations": {
+      "title": "Derived Calculation Formulas",
+      "calculations": [
+        {
+          "id": "formula_39",
+          "name": "Total Employees Calculation",
+          "formula": "male_employees + female_employees + other_gender_employees",
+          "inputs": ["male_employees", "female_employees", "other_gender_employees"],
+          "output_unit": "count"
+        },
+        {
+          "id": "formula_40",
+          "name": "Total Workers Calculation",
+          "formula": "male_workers + female_workers + other_gender_workers",
+          "inputs": ["male_workers", "female_workers", "other_gender_workers"],
+          "output_unit": "count"
+        },
+        {
+          "id": "formula_41",
+          "name": "Total Workforce",
+          "formula": "total_employees + total_workers",
+          "inputs": ["total_employees", "total_workers"],
+          "output_unit": "count"
+        },
+        {
+          "id": "formula_42",
+          "name": "Total Waste Calculation",
+          "formula": "hazardous_waste_generated + non_hazardous_waste_generated",
+          "inputs": ["hazardous_waste_generated", "non_hazardous_waste_generated"],
+          "output_unit": "MT"
+        },
+        {
+          "id": "formula_43",
+          "name": "Total Board Members Calculation",
+          "formula": "independent_directors + executive_directors + non_executive_directors",
+          "inputs": ["independent_directors", "executive_directors", "non_executive_directors"],
+          "output_unit": "count"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_date": "2025-08-27",
+    "description": "Complete ESG formulas library in simple JSON format",
+    "total_formulas": 43,
+    "categories": 7
+  }
+}
